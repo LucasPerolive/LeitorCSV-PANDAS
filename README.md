@@ -48,5 +48,5 @@ engine = create_engine('mysql+pymysql://<nome_usuario>:<senha>@localhost/leitorc
 
 Pronto, agora eh so execurar o seguinte comando:
 ```
-Python3 leitorcsv.py
+python3 leitorcsv.py
 ```

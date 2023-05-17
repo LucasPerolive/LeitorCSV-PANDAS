@@ -4,7 +4,9 @@ Este eh um programa que ira fazer a leitura do csv e inserir no banco de dados o
 
 ##Pode ser usado tanto no Windows e no Linux, no entanto para usar no Linux voce tera que criar um usuario do MySQL.
 <hr>
+
 #Linux:
+
 Use os seguinte comandos:
 ```
 git clone https://github.com/LucasPerolive/LeitorCSV-PANDAS.git

@@ -23,6 +23,30 @@ Crie o usuario do MySQL(substitua o que estiver entre <> para o de sejado):
 ```
 CREATE USER '<nome_usuario>'@'localhost' IDENTIFIED BY '<senha>';
 GRANT ALL PRIVILEGES ON *.* TO '<nome_usuario>'@'localhost';
-exit;
 ```
 <br>
+
+Crie o bando de dados colando(use o usuario criado no passo anterior):
+```
+mysql -u <nome_usuario> -p < BDleitorcsv.sql
+```
+Ele ira pedir a senha do usuario que foir criado anteriormente.
+
+Agora voce deve editar o programa python:
+```
+nano leitorcsv.py
+```
+
+Indetifique a linha:
+```
+engine = create_engine('mysql+pymysql://root:@localhost/leitorcsv')
+```
+E substitua:
+```
+engine = create_engine('mysql+pymysql://<nome_usuario>:<senha>@localhost/leitorcsv')
+```
+
+Pronto, agora eh so execurar o seguinte comando:
+```
+Python3 leitorcsv.py
+```

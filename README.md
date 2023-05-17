@@ -57,5 +57,7 @@ python3 leitorcsv.py
 
 Para usar no Windows voce tera que ter instalado o XAMPP e o MySQL, start o servico MySQL no XAMPP. Abra o MySQL e crie o banco que esta no .sql .
 Execute o requisitos-python-win.bat, que ira baixar as bibliotecas necessarias do python, sendo elas:
+
 pymysql, sqlalchemy, pandas
+
 Agora é só executar o programa python.

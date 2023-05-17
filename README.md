@@ -10,8 +10,8 @@ Este eh um programa que ira fazer a leitura do csv e inserir no banco de dados o
 Use os seguinte comandos:
 ```
 git clone https://github.com/LucasPerolive/LeitorCSV-PANDAS.git
-chmod +x install-python3-mysql-linux.sh
 cd LeitorCSV-PANDAS/leitorcsv
+chmod +x install-python3-mysql-linux.sh
 ./install-python3-mysql-linux.sh
 ```
 Isso fara com que instale o MySQL, Python3 e as bibliotecas necessarias.

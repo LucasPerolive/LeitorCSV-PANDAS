@@ -2,7 +2,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 # Cria o dataframe apartir do csv
-dataframe = pd.read_csv('csv/expulsoes.csv', sep=',', encoding='utf-8')
+dataframe = pd.read_csv(input('Caminho absoluto/relativo do CSV: '), sep=',', encoding='utf-8')
 
 # Formata a data_inicio e a data_final, substituindo as "/" por "-"
 dataframe['data_inicio'] = dataframe['data_inicio'].str.replace('/', '-')

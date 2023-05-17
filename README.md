@@ -24,6 +24,7 @@ Crie o usuario do MySQL(substitua o que estiver entre <> para o de sejado):
 ```
 CREATE USER '<nome_usuario>'@'localhost' IDENTIFIED BY '<senha>';
 GRANT ALL PRIVILEGES ON *.* TO '<nome_usuario>'@'localhost';
+exit;
 ```
 <br>
 
